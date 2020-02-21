@@ -177,10 +177,22 @@ header a {
 }
 .navdiv {
   border-bottom: 3px dashed lightgray;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .navdiv {
+    flex-direction: column;
+  }
 }
 .funbus {
   display: block;
   margin: 30px auto;
+}
+.putrow {
+  display: flex;
+  justify-content: space-between;
 }
 .footer {
   width: 100%;
@@ -192,6 +204,9 @@ header a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.mycontainer {
+  margin: 30px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -238,4 +253,18 @@ header a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  background-color: #17A2B8;
+  color: #212529;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+.home .content-pick .destination button:hover {
+  background-color: #212529;
+  color: #17A2B8;
 }

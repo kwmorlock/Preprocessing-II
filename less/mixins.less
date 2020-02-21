@@ -1,7 +1,13 @@
 // Mixins in here
 
-.button1(@background-color, @font-color){
-    background-color: @eastern-blue;
-    font-color: @shark;
-
+//the variables called would be in variable.less and put
+//in () when function is invoked, sorta like javascript
+//called parametric mixins
+.button1(@background, @font-color){
+    background-color: @background;
+    color: @font-color;
+    &:hover{
+        background-color: @font-color;
+        color: @background;
+    }
 }
